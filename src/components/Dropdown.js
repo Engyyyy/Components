@@ -15,6 +15,7 @@ function Dropdown({ options, value, onChange }) {
   };
   useEffect(() => {
     const handleDocClick = (event) => {
+      if (!dropdownEl.current) return;
       if (!dropdownEl.current.contains(event.target)) setIsOpen(false);
     };
     document.addEventListener("click", handleDocClick, true);
