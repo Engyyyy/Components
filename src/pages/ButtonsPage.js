@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import { GiFireRay, GiClick } from "react-icons/gi";
 
-function ButtonPage() {
+function ButtonsPage() {
   const handleClick = () => {
     console.log("I am Primary");
   };
@@ -36,4 +36,4 @@ function ButtonPage() {
   );
 }
 
-export default ButtonPage;
+export default ButtonsPage;
