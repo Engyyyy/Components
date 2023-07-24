@@ -31,7 +31,7 @@ function SortableTable(props) {
             onClick={() => handleClick(column.label)}
           >
             <div className="flex items-center">
-              <div className="m-2">
+              <div className="mr-2">
                 <BsFillCaretUpFill
                   className={classNames({
                     invisible: column.label === sortBy && sortOrder === DESC,
