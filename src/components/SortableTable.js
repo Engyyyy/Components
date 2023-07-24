@@ -27,11 +27,11 @@ function SortableTable(props) {
         ...column,
         header: () => (
           <th
-            className="cursor-pointer hover:bg-gray-100"
+            className="cursor-pointer hover:bg-gray-100 px-2"
             onClick={() => handleClick(column.label)}
           >
             <div className="flex items-center">
-              <div>
+              <div className="m-2">
                 <BsFillCaretUpFill
                   className={classNames({
                     invisible: column.label === sortBy && sortOrder === DESC,
